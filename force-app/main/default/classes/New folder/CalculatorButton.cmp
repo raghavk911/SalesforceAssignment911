@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" controller="Calculation" >
+    <aura:attribute name="label" type="String" />
+    
+    <lightning:button label="{!v.label}" name="{!v.label}" onclick = "{!c.press}"/> 
+    
+    <!--register event here-->
+    <aura:registerEvent name="cmpEvent" type="c:PassValue"/>
+    
+</aura:component>

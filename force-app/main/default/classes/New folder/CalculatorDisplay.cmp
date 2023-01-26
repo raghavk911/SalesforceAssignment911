@@ -1,0 +1,28 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+    <aura:attribute name="num1" type="String"/>
+    <ui:outputText value="{!v.num1}"/>
+    
+    <aura:attribute name="result" type="Integer"/>
+    <lightning:input type="Integer" label="{!v.result}"/><br/>
+        
+    <c:CalculatorButton label="7" />
+    <c:CalculatorButton label="8"/>
+    <c:CalculatorButton label="9"/>
+    <c:CalculatorButton label="/"/><br/>
+    <c:CalculatorButton label="4"/>
+    <c:CalculatorButton label="5"/>
+    <c:CalculatorButton label="6"/>
+    <c:CalculatorButton label="-"/><br/>
+    <c:CalculatorButton label="1"/>
+    <c:CalculatorButton label="2"/>
+    <c:CalculatorButton label="3"/>
+    <c:CalculatorButton label="+"/><br/>
+    <c:CalculatorButton label="0"/>
+    <c:CalculatorButton label="."/>
+    <c:CalculatorButton label="*"/>
+    <c:CalculatorButton label="="/><br/>
+    
+    <!-- handle event in parent-->
+    <aura:handler name="cmpEvent" event="c:PassValue" action="{!c.handleSampleEvent}"/>
+    
+</aura:component>
