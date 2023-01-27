@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <div class="slds-box" style="display: inline-block">
+        <lightning:card>
+            <!--<c:CalculatorDisplay />-->
+            <c:AuraDisplayCalculator />
+        </lightning:card> 
+    </div>
+    
+</aura:component>
