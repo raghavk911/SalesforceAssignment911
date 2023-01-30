@@ -1,7 +1,6 @@
 ({
 	handleApplicationEvent : function(component, event, helper) {
-		var message = event.getParam("messageDisplay");// event attribute name
-		// set the handler attributes based on event data
+		var message = event.getParam("messageDisplay");
 		component.set("v.label", message);
 	}
 })
