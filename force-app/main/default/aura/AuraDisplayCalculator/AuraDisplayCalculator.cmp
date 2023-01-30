@@ -1,0 +1,33 @@
+<aura:component controller="AuraControllerCalc" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+  <aura:attribute name="numberOne" type="string"/>
+  <aura:attribute name="operator"  type="string"/>
+  <aura:attribute name="numberTwo" type="String"/>
+  <aura:attribute name="buttonValue" type="String"/>
+  <aura:attribute name="result" type="string"/>
+  <aura:attribute name="finalresult" type="integer"/>
+
+  <ui:outputText  value="{!v.result}" /><br/>
+  <ui:outputText  value="{!v.finalresult}" /><br/>
+  <ui:outputText  value="{!v.buttonValue}" /><br/>
+
+  <aura:handler name="DisplayVaueEvent" event="c:ButtonDisplayValue" action="{!c.showValue}"/>
+
+  <aura:registerEvent name="DisplayVaule" type="c:DisplayValue"/>
+
+  <c:AuraCalculator label="7" />
+  <c:AuraCalculator label="8"/>
+  <c:AuraCalculator label="9"/>
+  <c:AuraCalculator label="/"/><br/>
+  <c:AuraCalculator label="4"/>
+  <c:AuraCalculator label="5"/>
+  <c:AuraCalculator label="6"/>
+  <c:AuraCalculator label="*"/><br/>
+  <c:AuraCalculator label="1"/>
+  <c:AuraCalculator label="2"/>
+  <c:AuraCalculator label="3"/>
+  <c:AuraCalculator label="-"/><br/>
+  <c:AuraCalculator label="0"/>
+  <c:AuraCalculator label="."/>
+  <c:AuraCalculator label="="/>
+  <c:AuraCalculator label="+"/>
+</aura:component>
