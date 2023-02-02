@@ -2,7 +2,7 @@
 * @triggername    TriggerSendEmail
 * @author         Raghav
 * @date           22-01-2023
-* @description    This is Trigger of TriggerSendEmail 
+* @description    This is Trigger of HandlerSendEmail 
 *
 * @modification log
 * 1. Raghav        31-01-2023  Update the code intentation
