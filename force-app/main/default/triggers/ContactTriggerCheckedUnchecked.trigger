@@ -1,9 +1,12 @@
-/**  @triggername 	    :   ContactTriggerCheckedUnchecked
-  *  @author 			:   Raghav
-  *  @group  			:   none
-  *  @param  			:   context variable after insert, before insert
-  *  @description       :   This is trigger of HandlerCreateFamily handler
-  *  @return 			:   none
+/*
+* @triggername    ContactTriggerCheckedUnchecked
+* @author         Raghav
+* @date           22-01-2023
+* @description    This is Trigger of ContactTriggerCheckedUnchecked 
+*
+* @modification log
+* 1. Raghav        31-01-2023  Update the code intentation
+* 2. Raghav        01-02-2023  Add Code Comments
 */
 trigger ContactTriggerCheckedUnchecked on Contact (after insert, before insert) {
     if( Trigger.isInsert && Trigger.isAfter ){
