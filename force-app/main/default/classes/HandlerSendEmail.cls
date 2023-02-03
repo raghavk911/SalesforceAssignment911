@@ -48,4 +48,4 @@ public class HandlerSendEmail {
     // Step 5: Send all list of mails
     Messaging.sendEmail(mails);
   }
-}
+} 

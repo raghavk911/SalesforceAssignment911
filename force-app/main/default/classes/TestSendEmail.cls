@@ -28,7 +28,7 @@ public class TestSendEmail {
     insert conHead;
     List <Contact>conList=new List <Contact>();
     Contact con= new Contact();
-    con.FirstName='Sujit';
+    con.FirstName='Sujit'; 
     con.LastName='Kadam';
     con.Email='raghav.k911@gmail.com';
     con.Skip_Validation_Rule__c=True;
