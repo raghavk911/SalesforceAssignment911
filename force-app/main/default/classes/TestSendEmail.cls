@@ -1,36 +1,34 @@
 /*
-* @classname      TestSendEmail
-* @author         Raghav
-* @date           22-01-2023
-* @description    This is Test class of HandlerSendEmail
+* @classname            :   TestSendEmail02
+* @author               :   Raghavendra Kadam
+* @date                 :   22-Jan-2023
+* @description          :   This is Test class of HandlerSendEmail
 *
 * @modification log
-* 1. Raghav        31-01-2023  Update the code intentation
-* 2. Raghav        01-02-2023  Add Code Comments
+* 1. Raghavendra Kadam  :   31-Jan-2023  Update the code intentation
+* 2. Raghavendra Kadam  :   01-Feb-2023  Add Code Comments
 */
 @isTest
 public class TestSendEmail {
-/**  @methodname 	:   checkboxChecked
-  *  @author 		:   Raghav
-  *  @group  		:   none
-  *  @param  		:   none
-  *  @description   :   This method test sending mail whenever new family is being added to Contact
-  *  @return 		:   none
+/**  @methodname 	      :   checkboxChecked
+  *  @author 		        :   Raghavendra Kadam
+  *  @description       :   This method test sending mail whenever new family is being added to Contact
+  *  @return 		        :   none
 */
   @isTest
   public static void sendEmail(){
     Contact conHead= new Contact();
-    ConHead.FirstName='Raghav';
+    ConHead.FirstName='Raghavendra Kadam';
     conHead.LastName='Kadam';
     conHead.Is_Family_Head__c=True;
     conHead.Skip_Validation_Rule__c=True;
-    conHead.Email='raghav.k911@gmail.com';
+    conHead.Email='Raghavendra Kadam.k911@gmail.com';
     insert conHead;
     List <Contact>conList=new List <Contact>();
     Contact con= new Contact();
     con.FirstName='Sujit'; 
-    con.LastName='Kadam';
-    con.Email='raghav.k911@gmail.com';
+    con.LastName='Kadam'; 
+    con.Email='Raghavendra Kadam.k911@gmail.com';
     con.Skip_Validation_Rule__c=True;
     con.Is_Family_Head__c=False;
     con.Family_Heads__c=conHEad.Id;

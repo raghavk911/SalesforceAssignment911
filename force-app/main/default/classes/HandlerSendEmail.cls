@@ -1,20 +1,19 @@
 /*
-* @classname      HandlerSendEmail
-* @author         Raghav
-* @date           22-01-2023
-* @description    This is Handler class of TestSendEmail trigger
+* @classname            :   HandlerSendEmail
+* @author               :   Raghavendra Kadam
+* @date                 :   22-Jan-2023
+* @description          :   This is Handler class of TestSendEmail trigger
 *
 * @modification log
-* 1. Raghav        31-01-2023  Update the code intentation
-* 2. Raghav        01-02-2023  Add Code Comments
+* 1. Raghavendra Kadam  :   31-Jan-2023  Update the code intentation
+* 2. Raghavendra Kadam  :   01-Feb-2023  Add Code Comments
 */
 public class HandlerSendEmail {
-/**  @methodname 	:   checkboxChecked
-  *  @author 		:   Raghav
-  *  @group  		:   none
-  *  @param  		:   List of Contact
-  *  @description   :   This method is used to add Ids into a set and send email to regarding recipients
-  *  @return 		:   none
+/**  @methodname 	      :   checkboxChecked
+  *  @author 		        :   Raghavendra Kadam
+  *  @param  		        :   List<Contact> 
+  *  @description       :   This method is used to add Ids into a set and send email to regarding recipients
+  *  @return 		        :   none
 */
   public void sendEmail(List<Contact> conList){
     set<Id> headidset =new Set<Id>();
