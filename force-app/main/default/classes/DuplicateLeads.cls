@@ -1,33 +1,32 @@
-/*
-* @classname      DuplicateLeads
-* @author         Raghav
-* @date           22-01-2023
-* @description    This is Batch class which delete duplicate leads after a schedule of 2 hours
-*
-* @modification log
-* 1. Raghav        31-01-2023  Update the code intentation
-* 2. Raghav        01-02-2023  Add Code Comments
+/**
+ * @classname            :  DuplicateLeads
+ * @author               :  Raghavendra Kadam
+ * @date                 :  22-01-2023
+ * @description          :  This is Batch class which delete duplicate leads after a schedule of 2 hours
+ *
+ * @modification log
+ * 1. Raghavendra Kadam  :  31-01-2023  Update the code intentation
+ * 2. Raghavendra Kadam  :  01-02-2023  Add Code Comments
+ * 3. Raghavendra Kadam  :  03-02-2023  Corrected Code Comments
 */
 global class DuplicateLeads implements Database.Batchable<sObject>,Database.Stateful, Schedulable {
-/*
-* @methodname         start
-* @param              Database.BatchableContext
-* @description        This method is used for querry from lead
-* @return             Database.getQueryLocator
-* @author             Raghav 
-* @group              none
+/**
+ * @methodname           :  start
+ * @param                :  Database.BatchableContext
+ * @description          :  This method is used for querry from lead
+ * @return               :  Database.getQueryLocator
+ * @author               :  Raghavendra Kadam 
 */
   global Database.QueryLocator start(Database.BatchableContext bc){
     return Database.getQueryLocator('Select Id, Name, LastName, Company, Status, Email from Lead');
   }
 
-/*
-* @methodname         execute
-* @param              Database.BatchableContext, List of lead
-* @description        This method is used for delete duplicate leads using last name
-* @return             none
-* @author             Raghav
-* @group              none
+/**
+ * @methodname           :  execute
+ * @param                :  Database.BatchableContext, List of lead
+ * @description          :  This method is used for delete duplicate leads using last name
+ * @return               :  none
+ * @author               :  Raghavendra Kadam
 */
   global void execute(Database.BatchableContext bc, List<Lead> l){
     Map<String,Lead> LastNameLead = new Map<String,Lead>();
@@ -46,26 +45,24 @@ global class DuplicateLeads implements Database.Batchable<sObject>,Database.Stat
       delete duplicateToDelete;
     }
   }
-/*
-* @methodname         finish
-* @param              Database.BatchableContext
-* @description        none
-* @return             none
-* @author             Raghav
-* @group              none
+/**
+ * @methodname            :     finish
+ * @param                 :     Database.BatchableContext
+ * @description           :     none
+ * @return                :     none
+ * @author                :     Raghavendra Kadam
 */
   global void finish(Database.BatchableContext bc)
   {
 
   }
 
-/*
-* @methodname         execute
-* @param              SchedulableContext
-* @description        none
-* @return             none
-* @author             Raghav
-* @group              none
+/**
+ * @methodname             :    execute
+ * @param                  :    SchedulableContext
+ * @description            :    none
+ * @return                 :    none
+ * @author                 :    Raghavendra Kadam
 */
   global void execute(SchedulableContext sc) {
     DuplicateLeads lb = new DuplicateLeads();

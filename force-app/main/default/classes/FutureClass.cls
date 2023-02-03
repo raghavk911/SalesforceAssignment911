@@ -1,22 +1,22 @@
 /*
-* @classname      FutureClass
-* @author         Raghav
-* @date           22-01-2023
-* @description    This is Future class which create new Contact 
-                  and in seperate transaction it creates new User an Organization
+* @classname            :   FutureClass
+* @author               :   Raghav
+* @date                 :   22-01-2023
+* @description          :   This is Future class which create new Contact 
+                        :   and in seperate transaction it creates new User an Organization
 *
 * @modification log
-* 1. Raghav        31-01-2023  Update the code intentation
-* 2. Raghav        01-02-2023  Add Code Comments
+* 1. Raghavendra Kadam  :   31-01-2023  Updated the code intentation
+* 2. Raghavendra Kadam  :   01-02-2023  Added Code Comments
+* 3. Raghavendra Kadam  :   03-02-2023  Corrected Code Comments
 */
 global class FutureClass {
 /*
-* @methodname         createContact
-* @param              none
-* @description        This method is used for create new Contact
-* @return             none
-* @author             Raghav 
-* @group              none
+ * @methodname          :   createContact
+ * @param               :   none
+ * @description         :   This method is used for create new Contact
+ * @return              :   none
+ * @author              :   Raghav 
 */
   public static void createContact(){
     Contact con = new Contact();
@@ -30,12 +30,11 @@ global class FutureClass {
     createUser(con.FirstName, con.LastName, con.Email );
   }
 /*
-* @methodname         createUser
-* @param              FirstName, LastName, Email
-* @description        This method seperates the transaction and create new User in an Organization
-* @return             none
-* @author             Raghav
-* @group              none
+ * @methodname            :   createUser
+ * @param                 :   FirstName, LastName, Email
+ * @description           :   This method seperates the transaction and create new User in an Organization
+ * @return                :   none
+ * @author                :   Raghav
 */
   @future
   public static void createUser(string FirstName, string LastName, string Email){

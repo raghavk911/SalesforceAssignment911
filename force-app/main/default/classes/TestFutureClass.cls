@@ -1,24 +1,23 @@
 /*
-* @classname      public class TestFutureClass {
-
-* @author         Raghav
-* @date           22-01-2023
-* @description    This is Test class of Future class which create new Contact 
-                  and in seperate transaction it creates new User an Organization
+* @classname            :   public class TestFutureClass {
+* @author               :   Raghavendra Kadam
+* @date                 :   22-01-2023
+* @description          :   This is Test class of Future class which create new Contact 
+                        :   and in seperate transaction it creates new User an Organization
 *
 * @modification log
-* 1. Raghav        31-01-2023  Update the code intentation
-* 2. Raghav        01-02-2023  Add Code Comments
+* 1. Raghavendra Kadam  :   31-01-2023  Updated the code intentation
+* 2. Raghavendra Kadam  :   01-02-2023  Added Code Comments
+* 3. Raghavendra Kadam  :   03-02-2023  Correted Code Comments
 */
 @isTest
 public class TestFutureClass {
 /*
-* @methodname         createContactTest
-* @param              none
-* @description        This method is used for test creation of Contact record
-* @return             none
-* @author             Raghav 
-* @group              none
+* @methodname           :   createContactTest
+* @param                :   none
+* @description          :   This method is used for test creation of Contact record
+* @return               :   none
+* @author               :   Raghavendra Kadam 
 */
   @isTest
   static void createContactTest(){

@@ -1,28 +1,27 @@
 /*
-* @classname      TestDuplicateLeads
-* @author         Raghav
-* @date           22-01-2023
-* @description    This is Test class of DuplicateLeads which delete duplicate leads after a schedule of 2 hours
-*
-* @modification log
-* 1. Raghav        31-01-2023  Update the code intentation
-* 2. Raghav        01-02-2023  Add Code Comments
+ * @classname               :   TestDuplicateLeads
+ * @author                  :   Raghavendra Kadam
+ * @date                    :   22-01-2023
+ * @description             :   This is Test class of DuplicateLeads which delete duplicate leads after a schedule of 2 hours
+ *
+ * @modification log
+ * 1. Raghavendra Kadam     :   31-01-2023  Update the code intentation
+ * 2. Raghavendra Kadam     :   01-02-2023  Add Code Comments
 */
 @isTest
 public class TestDuplicateLeads {
 /*
-* @methodname         myLeadTest
-* @param              none
-* @description        This method is used for test creation of Contact record
-* @return             none
-* @author             Raghav 
-* @group              none
+* @methodname               :   myLeadTest
+* @param                    :   none
+* @description              :   This method is used for test creation of Contact record
+* @return                   :   none
+* @author                   :   Raghavendra Kadam 
 */
   @isTest
   public static void myLeadTest(){
     List<Lead> leadList1 = new List<Lead>();
     lead l = new Lead();
-    l.FirstName= 'Raghav';
+    l.FirstName= 'Raghavendra Kadam';
     l.LastName = 'Kadam';
     l.Company = 'ABC';
     l.Status = 'Closed - Converted';
@@ -32,7 +31,7 @@ public class TestDuplicateLeads {
     //Creation of duplicate Contact record
     List<Lead> leadList2 = new List<Lead>();
     lead l1 = new Lead();
-    l1.FirstName= 'Raghav';
+    l1.FirstName= 'Raghavendra Kadam';
     l1.LastName = 'Kadam';
     l1.Company = 'ABC';
     l1.Status = 'Closed - Converted';
@@ -49,12 +48,11 @@ public class TestDuplicateLeads {
 
   }
 /*
-* @methodname         testschedule
-* @param              none
-* @description        This method is used for test schedule of delete duplicate records
-* @return             none
-* @author             Raghav 
-* @group              none
+* @methodname               :   testschedule
+* @param                    :   none
+* @description              :   This method is used for test schedule of delete duplicate records
+* @return                   :   none
+* @author                   :   Raghavendra Kadam 
 */
   @isTest
   public static void testschedule() {
