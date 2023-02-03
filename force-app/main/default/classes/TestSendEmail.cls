@@ -1,19 +1,19 @@
-/*
-* @classname            :   TestSendEmail02
-* @author               :   Raghavendra Kadam
-* @date                 :   22-Jan-2023
-* @description          :   This is Test class of HandlerSendEmail
-*
-* @modification log
-* 1. Raghavendra Kadam  :   31-Jan-2023  Update the code intentation
-* 2. Raghavendra Kadam  :   01-Feb-2023  Add Code Comments
+/**
+ * @classname            :   TestSendEmail02
+ * @author               :   Raghavendra Kadam
+ * @date                 :   22-Jan-2023
+ * @description          :   This is Test class of HandlerSendEmail
+ *
+ * @modification log
+ * 1. Raghavendra Kadam  :   31-Jan-2023  Update the code intentation
+ * 2. Raghavendra Kadam  :   01-Feb-2023  Add Code Comments
 */
 @isTest
 public class TestSendEmail {
 /**  @methodname 	      :   checkboxChecked
-  *  @author 		        :   Raghavendra Kadam
-  *  @description       :   This method test sending mail whenever new family is being added to Contact
-  *  @return 		        :   none
+ *  @author 		        :   Raghavendra Kadam
+ *  @description        :   This method test sending mail whenever new family is being added to Contact
+ *  @return 		        :   none
 */
   @isTest
   public static void sendEmail(){
