@@ -1,12 +1,13 @@
-/*
-* @triggername    TriggerSendEmail
-* @author         Raghav
-* @date           22-01-2023
-* @description    This is Trigger of TriggerSendEmail 
-*
-* @modification log
-* 1. Raghav        31-01-2023  Update the code intentation
-* 2. Raghav        01-02-2023  Add Code Comments
+/**
+ * @triggername             :   TriggerSendEmail
+ * @author                  :   Raghavendra Kadam 
+ * @date                    :   22-01-2023
+ * @description             :   This is Trigger of TriggerSendEmail Handler class 
+ *
+ * @modification log
+ * 1. Raghavendra Kadam     :   31-01-2023  Updated the code intentation
+ * 2. Raghavendra Kadam     :   01-02-2023  Added Code Comments
+ * 3. Raghavendra Kadam     :   03-02-2023  Corrected Code Comments
 */
 trigger TriggerSendEmail on Contact (after insert) {
   HandlerSendEmail obj= new HandlerSendEmail();
