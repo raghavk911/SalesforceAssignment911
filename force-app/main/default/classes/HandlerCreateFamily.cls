@@ -1,19 +1,19 @@
 /*
-* @classname              :   HandlerCreateFamily
-* @author                 :   Raghavendra Kadam
-* @date                   :   22-Jan-2023
-* @description            :   This is Handler class of ContactTriggerCheckedUnchecked 
-*
-* @modification log
-* 1. Raghavendra Kadam    :   31-Jan-2023  Update the code intentation
-* 2. Raghavendra Kadam    :   01-Feb-2023  Add Code Comments
-*/
+ * @classname              :   HandlerCreateFamily
+ * @author                 :   Raghavendra Kadam
+ * @date                   :   22-Jan-2023
+ * @description            :   This is Handler class of ContactTriggerCheckedUnchecked 
+ *
+ * @modification log
+ * 1. Raghavendra Kadam    :   31-Jan-2023  Update the code intentation
+ * 2. Raghavendra Kadam    :   01-Feb-2023  Add Code Comments
+*/ 
 public class HandlerCreateFamily {
-/**  @methodname 	    :   checkboxChecked
-  *  @author 		      :   Raghavendra Kadam
-  *  @param  		      :   List<Contact>
-  *  @description     :   This method Generate Family from Family Head when is family head checkbox is checked
-  *  @return 		      :   none
+/**  @methodname 	         :   checkboxChecked
+  *  @author 		           :   Raghavendra Kadam
+  *  @param  		           :   List<Contact>
+  *  @description          :   This method Generate Family from Family Head when is family head checkbox is checked
+  *  @return 		           :   none
 */ 
   public static void checkboxChecked(List<Contact> conList){
     List<Account> accList = new List<Account>();  
@@ -41,11 +41,11 @@ public class HandlerCreateFamily {
     }
     update conListUpdateFamNm;
   }
-/**  @methodname 	    :   checkboxChecked
-  *  @author 		      :   Raghavendra Kadam
-  *  @param  		      :   List<Contact>
-  *  @description     :   This method populate Family Name when checkbox unchecked
-  *  @return 		      :   none
+/**  @methodname 	        :   checkboxChecked
+  *  @author 		          :   Raghavendra Kadam
+  *  @param  		          :   List<Contact>
+  *  @description         :   This method populate Family Name when checkbox unchecked
+  *  @return 		          :   none
 */
   public Static void checkBoxUnChecked(List<Contact> conList ){
     List<Account> accLIst = [Select Id, Name, BillingCity, BillingState, BillingCountry From Account];
