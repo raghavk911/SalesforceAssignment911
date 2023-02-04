@@ -9,7 +9,7 @@
  * 2. Raghavendra Kadam  :   01-Feb-2023  Add Code Comments
 */
 public class HandlerSendEmail {
-/** @methodname         :   checkboxChecked
+/** @methodname          :   checkboxChecked
  *  @author              :   Raghavendra Kadam
  *  @param               :   List<Contact> 
  *  @description         :   This method is used to add Ids into a set and send email to regarding recipients
