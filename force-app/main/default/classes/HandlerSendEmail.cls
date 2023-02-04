@@ -9,11 +9,11 @@
  * 2. Raghavendra Kadam  :   01-Feb-2023  Add Code Comments
 */
 public class HandlerSendEmail {
-/**  @methodname 	       :   checkboxChecked
- *  @author 		         :   Raghavendra Kadam
- *  @param  		         :   List<Contact> 
+/** @methodname         :   checkboxChecked
+ *  @author              :   Raghavendra Kadam
+ *  @param               :   List<Contact> 
  *  @description         :   This method is used to add Ids into a set and send email to regarding recipients
- *  @return 		         :   none
+ *  @return              :   none
 */
   public void sendEmail(List<Contact> conList){
     set<Id> headidset =new Set<Id>();
@@ -35,15 +35,14 @@ public class HandlerSendEmail {
     
     //step 3- Take all contacts and add one contact in one mail
     for(Contact con:conList){
-        mail.setSubject('New member has been added to Family : ');
-        mail.PlainTextBody = 'This is the message body.';
-        String body = 'Dear ' + con.FirstName + ', '; 
-        body += 'New voter from your family has been added successful';
-        mail.setHtmlBody(body);
-        
-        // Step 4. Add one to the list of mails
-        mails.add(mail);
-    } 
+      mail.setSubject('New member has been added to Family : ');
+      mail.PlainTextBody = 'This is the message body.';
+      String body = 'Dear ' + con.FirstName + ', '; 
+      body += 'New voter from your family has been added successful';
+      mail.setHtmlBody(body);
+      // Step 4. Add one to the list of mails
+      mails.add(mail);
+    }
     // Step 5: Send all list of mails
     Messaging.sendEmail(mails);
   }

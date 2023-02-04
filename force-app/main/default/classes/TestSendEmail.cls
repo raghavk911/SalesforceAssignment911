@@ -11,9 +11,9 @@
 @isTest
 public class TestSendEmail {
 /**  @methodname 	      :   checkboxChecked
- *  @author 		        :   Raghavendra Kadam
+ *  @author             :   Raghavendra Kadam
  *  @description        :   This method test sending mail whenever new family is being added to Contact
- *  @return 		        :   none
+ *  @return             :   none
 */
   @isTest
   public static void sendEmail(){
