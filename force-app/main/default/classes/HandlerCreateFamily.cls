@@ -10,10 +10,10 @@
 */ 
 public class HandlerCreateFamily {
 /**  @methodname 	         :   checkboxChecked
-  *  @author 		           :   Raghavendra Kadam
-  *  @param  		           :   List<Contact>
+  *  @author               :   Raghavendra Kadam
+  *  @param                :   List<Contact>
   *  @description          :   This method Generate Family from Family Head when is family head checkbox is checked
-  *  @return 		           :   none
+  *  @return               :   none
 */ 
   public static void checkboxChecked(List<Contact> conList){
     List<Account> accList = new List<Account>();  
@@ -41,11 +41,11 @@ public class HandlerCreateFamily {
     }
     update conListUpdateFamNm;
   }
-/**  @methodname 	        :   checkboxChecked
-  *  @author 		          :   Raghavendra Kadam
-  *  @param  		          :   List<Contact>
+/**  @methodname          :   checkboxChecked
+  *  @author              :   Raghavendra Kadam
+  *  @param               :   List<Contact>
   *  @description         :   This method populate Family Name when checkbox unchecked
-  *  @return 		          :   none
+  *  @return              :   none
 */
   public Static void checkBoxUnChecked(List<Contact> conList ){
     List<Account> accLIst = [Select Id, Name, BillingCity, BillingState, BillingCountry From Account];
